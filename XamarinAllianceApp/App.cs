@@ -12,7 +12,7 @@ namespace XamarinAllianceApp
 		public App ()
 		{
             // The root page of your application
-            MainPage = new NavigationPage (new Page1());
+            MainPage = new NavigationPage (new CharacterListPage());
 		}
 
 		protected override void OnStart ()
@@ -29,17 +29,6 @@ namespace XamarinAllianceApp
 		{
 			// Handle when your app resumes
 		}
-        //
-        async void OnNextPageButtonClicked (object sender, EventArgs e)
-        {
-            await Navigation.PushAsync  (new CharacterListPage ());
-        }
-
-        async void OnPreviousPageButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
-        
     }
 }
 

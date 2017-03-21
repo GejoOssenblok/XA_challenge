@@ -97,6 +97,23 @@ namespace XamarinAllianceApp.Views
                 }
             }
         }
+        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            // geen item
+            var item = args.SelectedItem as Models.Character;
+            if (item == null)
+                return;
+            // navigeer
+            await Navigation.PushAsync(new CharacterDetailPage(item));
+
+            // Manually deselect item
+            characterList.SelectedItem = null;
+        }
+
+        private void characterList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
     }
 }
 

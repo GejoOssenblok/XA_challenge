@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinAllianceApp.Views.CharacterDetailPage"
+             Title="CharacterDetails">
+    <StackLayout HorizontalOptions="Start" Orientation="Vertical" Padding="15,5,5,15" >
+        <Label Text="{Binding Item.Name}" FontAttributes="Bold" />
+        <Label Text="{Binding Item.ImageUrl}" />
+        <Label Text="{Binding Item.Gender}" />
+        <Label Text="{Binding Item.Height}" />
+        <Label Text="{Binding Item.Weapons}" />
+        <Label Text="{Binding Item.Biography}" />
+        <Label Text="{Binding Item.Appearances}" />
+        <Label Text="{Binding Item.DatabankUrl}" />
+    </StackLayout>
+</ContentPage>

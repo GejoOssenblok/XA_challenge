@@ -19,6 +19,7 @@
       <Label TextColor="#555555" Text="Xamarin Alliance Members" />
     </StackLayout>
     <ListView x:Name="characterList"
+              ItemSelected="OnItemSelected"
 				IsPullToRefreshEnabled="true" Refreshing="OnRefresh"
         HasUnevenRows="true"
 				Grid.Row="1">
